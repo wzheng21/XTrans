@@ -1,17 +1,9 @@
-# DG-EP
+# XTrans
 
-This is a project to do neutronics calculation using finite element methods.
+This is my personal project to do neutronics calculation using finite element methods.
 
-The initial motivation is to explore the Discontinuous Galerkin (DG) method for the Even Parity
-(EP) neutron transport equations in general dimensions (up to 3D). 
-This is an initial setup and prototypical code with isotropic scattering.
-The code is still in progress.
+The skeleton is based on STL C++ with the third-party library [deal.II](http://www.dealii.org/). deal.II provides MPI wrapper functions and PETSc functionalities for SparseMatrix, Vector, preconditioners and solvers.
 
-Up to now, the code is re-designed and gradually re-coded to take in different transport solvers in
-an OOP way.
+Now, this XTrans project become the C++ core part of the Project "Bay-Area Radiation Transport code", or [BART](https://github.com/rachelslaybaugh/BART) at UC Berkeley. (PI: [Rachel Slaybaugh](https://github.com/rachelslaybaugh))
 
-Currently, the project is named XTrans and will be discussed.
-
-Currently, we are using [deal.II](http://www.dealii.org/) finite element
-library. In the future, we are likely to convert to
-[libMesh](http://libmesh.github.io/). 
+This project will not be discontinued but will be investigating new implementations and as a reference for BART implementation.
